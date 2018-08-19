@@ -59,3 +59,14 @@ traer las nuevas fotos,
       "timeout": "3s"
     }
   }]
+  
+----------- click install banner
+
+"display": "fullscreen"
+"theme_color": "transparent"
+"background_color": "transparent"
+
+https://app-manifest.firebaseapp.com/
+https://onlinefavicon.com/
+
+generar imagenes para diferentes resoluciones
