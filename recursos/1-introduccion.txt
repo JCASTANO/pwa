@@ -1,0 +1,28 @@
+pwa
+web apps/sites que cumplen ciertas caracteristicas
+
+que deberia conocer?
+javascript
+html / css
+angular / typescript
+
+que seria bueno conocer
+service workers
+bases de datos
+
+app de notas
+	crea notas que son guardadas en la nube
+	cuando sea posible
+	actualizadas en tiempo real
+	si estas offline son guardados en tu dispositivo
+	hasta que regreses online
+	
+herramientas
+	chrome
+	editor de texto
+	npm
+	angular cli
+	
+ng new pwa
+ng add @angular/pwa
+ng version

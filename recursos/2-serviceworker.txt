@@ -1,0 +1,61 @@
+El service worker solo va a funcionar cuando la aplicación esté en modo de producción, 
+esto es porque el SW revisa los bundles.
+
+https://developers.google.com/web/fundamentals/primers/service-workers/?hl=es
+
+es un script que se ejecuta en el fondo
+separado del web app
+da acceso a caracteristicas que no necesitan
+interaccion con el usuario
+
+	escritos en js
+	no tienen acceso al dom
+	funcionan como proxy 
+		(como se ejecutan las llamadas de red)
+	son detenidos cuando no estan en uso
+	funcionan solo sobre https
+	sus metodos estan basados en promesas
+	
+que provee un service worker
+	confiabilidad -> recursos desde cache
+	performance -> solo hace llamados cuando es necesario
+	push notifications -> 
+	sistema de caching
+	
+ciclo de vida
+	sin service worker
+	instalacion
+	activacion
+	idle -> esperando que lleguen peticiones
+	atender peticiones
+	terminacion -> el browser lo puede hacer
+	
+https://alligator.io/angular/service-worker-updates/
+
+**prefetch **- Cuando las imágenes no van a 
+cambiar muy seguido.
+
+**lazy: cargado perezoso
+
+**freshness **- Siempre se van a 
+traer las nuevas fotos,
+ si el servicios esta tardando 
+ en responder se queda con las que tiene en cache.
+ 
+ "strategy" : "performance" -> cache buscando performance
+ "strategy" : "freshness" -> contenido mas actualizado
+ 
+ Contemplar performance y freshness
+ 
+ "dataGroups": [{
+    "name": "redditAPI",
+    "urls": [
+      "https://www.reddit.com/r/pics.json"
+    ],
+    "cacheConfig": {
+      "strategy": "performance",
+      "maxAge": "1d",
+      "maxSize": 100,
+      "timeout": "3s"
+    }
+  }]
