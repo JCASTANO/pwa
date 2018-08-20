@@ -1,3 +1,5 @@
+import { MessagingService } from './services/messaging.service';
+import { AuthService } from './services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { SwUpdate } from '../../node_modules/@angular/service-worker';
 import { NotesService } from './services/notes.service';
@@ -14,15 +16,25 @@ export class AppComponent implements OnInit {
   categorias: any = ['trabajo', 'personal'];
   nota: any = {};
   notas: any = null;
+  message: any = {};
+  currentToken: any = {};
 
   constructor(private swUpdate: SwUpdate,
   private notesService: NotesService,
-  private snackBar: MatSnackBar) {
+  private snackBar: MatSnackBar,
+  private authService: AuthService,
+  private messagingService: MessagingService) {
 
     this.notesService.getNotes().valueChanges().subscribe(fbNotas => {
       this.notas = fbNotas.reverse();
     });
 
+    this.messagingService.getPermission();
+    this.messagingService.receiveMessage();
+    this.message = this.messagingService.currentMessage;
+    setTimeout(() => {
+      this.currentToken = this.messagingService.getCurrentToken();
+    }, 5000);
   }
 
   ngOnInit(): void {
@@ -59,4 +71,8 @@ export class AppComponent implements OnInit {
     this.nota = nota;
   }
 
+  login() {
+    this.authService.loginWithFacebook();
+  }
 }
+

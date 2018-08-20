@@ -1,0 +1,16 @@
+ve a tu proyecto de firebase->
+configuración del proyecto->Mensajería en la nube
+y lo encontrarás como id del remitente
+
+subir al hosting de firebase
+
+https://www.getpostman.com/collections/b77232592f031ec186a8
+
+cloud functions
+
+https://firebase.google.com/docs/functions/
+https://firebase.google.com/docs/functions/get-started
+https://firebase.google.com/docs/functions/use-cases
+https://codelabs.developers.google.com/codelabs/firebase-cloud-functions/#0
+
+NativeScript: Características Nativas en un Web App con Angular
