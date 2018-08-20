@@ -1,0 +1,14 @@
+responsividad
+	que se vea bien en cualquier dispositivo
+	media queries
+	enfoque de mobile first
+
+material design
+	lenguaje diseñado por google
+	trata de imitar materiales fisicos
+	controles que podemos usar out of the box
+	angular material
+	
+	https://material.io/
+	https://material.angular.io/
+	

@@ -1,0 +1,16 @@
+backend as a service
+	provee
+		analytics
+		base de datos
+		messaging
+		crash reporting
+		entre otros
+	
+implementando firebase
+https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md
+
+---creando un servicio
+
+crud de notas con firebase
+
+---- vista de lista y detalle
