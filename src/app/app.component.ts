@@ -9,7 +9,7 @@ import {MatSnackBar} from '@angular/material';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'pwa';
+  title = 'PlatziNotas';
   panelOpenState = false;
   categorias: any = ['trabajo', 'personal'];
   nota: any = {};
