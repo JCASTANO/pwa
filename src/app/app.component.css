@@ -1,3 +1,8 @@
 .mat-form-field {
     width: 100%;
 }
+
+.title-welcome {
+    font: 400 34px/40px Roboto,"Helvetica Neue",sans-serif;
+    margin-bottom: 1px;
+}
