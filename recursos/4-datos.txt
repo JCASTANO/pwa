@@ -14,3 +14,10 @@ https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md
 crud de notas con firebase
 
 ---- vista de lista y detalle
+
+---- guardando notas
+
+---- caching
+
+	si se pusiera performance no se 
+		refrescara al guardar una nueva

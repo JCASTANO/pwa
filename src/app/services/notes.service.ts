@@ -16,11 +16,7 @@ export class NotesService {
     return this.afDB.object('/notes/' + id);
   }
 
-  public createNote(note) {
-    return this.afDB.database.ref('/notes/' + note.id).set(note);
-  }
-
-  public editNote(note) {
+  public saveNote(note) {
     return this.afDB.database.ref('/notes/' + note.id).set(note);
   }
 

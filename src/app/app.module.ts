@@ -10,12 +10,18 @@ import {MatToolbarModule,
         MatFormFieldModule,
         MatButtonModule,
         MatCheckboxModule,
+        MatSelectModule,
+        MatOptionModule,
+        MatListModule,
+        MatSnackBarModule,
+        MatCardModule,
         MatInputModule} from '@angular/material';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +41,12 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatListModule,
+    MatSnackBarModule,
+    MatCardModule,
+    FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
